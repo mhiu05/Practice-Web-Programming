@@ -26,6 +26,8 @@ body{
     width: 300px;
     border-radius: 10px;
     text-align: center;
+    overflow: hidden;
+    margin: 0 25px;
 }
 
 img{
@@ -41,19 +43,38 @@ img{
     border: 4px solid var(--primary-color);
     border-radius: 50%;
     overflow: hidden;
-    margin: 20px auto;
+    margin: 0px auto;
+    transform: translateY(20px);
+    transition: 0.5s;
 
 }
  
+.card h2{
+    margin-top: 35px;;
+}
+
 .card p{
     color: var(--primary-color);
     margin-bottom: 20px;
 }
 
-.bx bxl-facebook-circle, .bx bxl-tiktok, .bx bxl-github, .bx bxl-youtube{
-    size: 300px;
-    margin-right: 25px;
-    margin-right: 25px;
+.card_social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+}
+
+.card_social a .tiktok, .card_social a .facebook, .card_social a .github, .card_social a .youtube{
+    color:white;
+}
+
+.card_social a .tiktok:hover, .card_social a .facebook:hover,.card_social a .youtube:hover, .card_social a .github:hover{
+    color: #f2726a;
 }
 
 .card button{
@@ -64,4 +85,18 @@ img{
     color: white;
     border-radius: 10px;
     margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.card button:hover{
+    background: #f2726a;
+}
+
+.card_img:hover{
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+    transform: unset;
+    border: none;
 }
