@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en,vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="register.js"></script>
+</head>
+
+<body>
+    <h1>Minh Hieu Education</h1>
+    <h2>Registration Form</h2>
+    <div id="error" style="color: red;"></div>
+    <form method="get" action="confirm.html" id="registerForm">
+        <fieldset>
+            <legend>Personal information: </legend>
+
+            <p>
+                <label for="firstname">Enter your First Name: </label>
+                <input type="text" id="firstname" name="firstname">
+            </p>
+
+            <p>
+                <label for="lastname">Enter your Last Name: </label>
+                <input type="text" id="lastname" name="lastname">
+            </p>
+
+            <p>
+                <label for="email">Enter your Email: </label>
+                <input type="text" id="email" name="email">
+            </p>
+
+            <p>
+                <label for="phoneNumber">Enter your Phone Number: </label>
+                <input type="text" id="phoneNumber" name="phoneNumber">
+            </p>
+
+            <p>
+                <label for="age">Enter your Age: </label>
+                <input type="text" id="age" name="age">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset id="radioOccupation">
+            <legend>Select your occupation: </legend>
+
+            <p>
+                <label for="hightschool">Highschool</label>
+                <input type="radio" id="highschool" name="occupation" value="highschool">
+            </p>
+
+            <p>
+                <label for="university">University</label>
+                <input type="radio" id="university" name="occupation" value="university">
+            </p>
+
+            <p>
+                <label for="working">Working</label>
+                <input type="radio" id="working" name="occupation" value="working">
+            </p>
+
+            <p>
+                <label for="retired">Retired</label>
+                <input type="radio" id="retired" name="occupation" value="retired">
+            </p>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Select Courses: </legend>
+
+            <p>
+                <label for=" logicMath">Logic Math: </label>
+                <input type="checkbox" id="logicMath" name="logicMath" value="Logic Math">
+            </p>
+
+            <p>
+                <label for="pythonGame">Python Game: </label>
+                <input type="checkbox" id="pythonGame" name="pythonGame" value="Python Game">
+            </p>
+
+            <p>
+                <label for="web">Web Programming: </label>
+                <input type="checkbox" id="web" name="web" value="Web">
+            </p>
+        </fieldset>
+        <p>
+            <label for="paymentMethod">Payment Method: </label>
+            <select name="paymentMethod" id="paymentMethod">
+                <option value="Please select your payment method">Select option</option>
+                <option value="MB bank">MB bank</option>
+                <option value="BIDV">BIDV</option>
+            </select>
+        </p>
+        <br>
+        <input type="submit" value="Register Now">
+        <input type="reset" value="Reset">
+    </form>
+
+</body>
+
+</html>
